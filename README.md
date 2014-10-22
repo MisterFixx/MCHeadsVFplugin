@@ -1,3 +1,3 @@
 MCHeadsVFplugin
 ===============
-The offcial MCHeads plugin for VanillaForums
+The offcial MCHeads plugin for VanillaForums.
