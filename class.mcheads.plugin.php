@@ -22,7 +22,7 @@ class VanilliconPlugin extends Gdn_Plugin {
    public function ProfileController_AfterAddSideMenu_Handler($Sender, $Args) {
       if (!$Sender->User->Photo) {
          $UserName = GetValue('Name', $Sender->User);
-         $Sender->User->Photo = 'http://mc-heads.net/avatar/'.$UserName;
+         $Sender->User->Photo = 'https://mc-heads.net/avatar/'.$UserName;
       }
    }
 }
@@ -30,7 +30,7 @@ class VanilliconPlugin extends Gdn_Plugin {
 if (!function_exists('UserPhotoDefaultUrl')) {
    function UserPhotoDefaultUrl($User, $Options = array()) {
       $UserName = GetValue('Name', $User);
-      $PhotoUrl = 'http://mc-heads.net/avatar/'.$UserName;
+      $PhotoUrl = 'https://mc-heads.net/avatar/'.$UserName;
       return $PhotoUrl;
    }
 }
